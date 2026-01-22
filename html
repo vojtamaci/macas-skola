@@ -1,0 +1,66 @@
+index
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pod max">
+  <div class="max" id="zelenejsi"></div>
+     <div class="max vedle">
+    <div class="pod max">
+      <div class="max" id="cervenej"></div>
+        <div class="max" id="zelenej"> </div>
+
+        <div class="max pod"></div>
+        <div class="max vedle"></div>
+        <div class="min vedle"></div>
+    </div>
+    <div class="max" id="cernej"></div>
+  </div>
+</body>
+</html>
+style
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.max {
+  flex-grow: 1;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+
+.min {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+#cernej {
+  background-color: rgb(1, 1, 1);
+}
+
+#zelenej {
+  background-color: hsl(140, 42%, 60.8%);
+}
+
+#zelenejsi {
+  background-color: chartreuse;
+}
+
+#cervenej {
+  background-color: firebrick;
+}
+
+.vedle {
+  display: flex;
+}
+
+.pod {
+  display: flex;
+  flex-direction: column;
+}
